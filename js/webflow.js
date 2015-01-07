@@ -3769,5 +3769,5 @@ Webflow.require('ix').init([
   {"slug":"show-feedback","name":"Show Feedback","value":{"style":{},"triggers":[{"type":"click","selector":".feedback","stepsA":[{"display":"block"}],"stepsB":[{"display":"none"}]}]}},
   {"slug":"show-contact","name":"Show Contact","value":{"style":{},"triggers":[{"type":"click","selector":".contact","stepsA":[{"display":"block"}],"stepsB":[{"display":"none"}]}]}},
   {"slug":"hidden-contact","name":"Hidden Contact","value":{"style":{"display":"none"},"triggers":[]}},
-  {"slug":"display-body-sections","name":"Display Body Sections","value":{"style":{},"triggers":[{"type":"click","selector":".more-info","stepsA":[{"display":"block"}],"stepsB":[]},{"type":"click","selector":".feedback","stepsA":[{"display":"block"}],"stepsB":[]},{"type":"click","selector":".contact","stepsA":[{"display":"block"}],"stepsB":[]}]}}
+  {"slug":"display-body-sections","name":"Display Body Sections","value":{"style":{},"triggers":[{"type":"click","selector":".more-info","stepsA":[{"display":"block"}],"stepsB":[]},/*{"type":"click","selector":".feedback","stepsA":[{"display":"block"}],"stepsB":[]},*/{"type":"click","selector":".contact","stepsA":[{"display":"block"}],"stepsB":[]}]}}
 ]);

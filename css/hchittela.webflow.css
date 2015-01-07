@@ -246,7 +246,7 @@ p {
   font-size: 14px;
 }
 .feedback {
-  display: block;
+  display: none;
   height: auto;
   min-height: 100%;
   padding-top: 0px;
