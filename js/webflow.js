@@ -3765,9 +3765,11 @@ Webflow.require('ix').init([
   {"slug":"display-nav","name":"Display Nav","value":{"style":{},"triggers":[{"type":"scroll","selector":".totopnavbar","stepsA":[{"transition":"transform 500ms ease 0ms","x":"0px","y":"-75px"},{"display":"none"}],"stepsB":[{"display":"block","transition":"transform 700ms ease 0ms","x":"0px","y":"0px"}]}]}},
   {"slug":"hidden-moreinfo","name":"Hidden MoreInfo","value":{"style":{"display":"none"},"triggers":[]}},
   {"slug":"show-more-info","name":"Show More Info","value":{"style":{},"triggers":[{"type":"click","selector":".more-info","stepsA":[{"display":"block"}],"stepsB":[{"display":"none"}]}]}},
+  {"slug":"hidden-projects","name":"Hidden Projects","value":{"style":{"display":"none"},"triggers":[]}},
+  {"slug":"show-projects","name":"Show Projects","value":{"style":{},"triggers":[{"type":"click","selector":".projects","stepsA":[{"display":"block"}],"stepsB":[{"display":"none"}]}]}},
   {"slug":"hidden-feedback","name":"Hidden Feedback","value":{"style":{"display":"none"},"triggers":[]}},
   {"slug":"show-feedback","name":"Show Feedback","value":{"style":{},"triggers":[{"type":"click","selector":".feedback","stepsA":[{"display":"block"}],"stepsB":[{"display":"none"}]}]}},
   {"slug":"show-contact","name":"Show Contact","value":{"style":{},"triggers":[{"type":"click","selector":".contact","stepsA":[{"display":"block"}],"stepsB":[{"display":"none"}]}]}},
   {"slug":"hidden-contact","name":"Hidden Contact","value":{"style":{"display":"none"},"triggers":[]}},
-  {"slug":"display-body-sections","name":"Display Body Sections","value":{"style":{},"triggers":[{"type":"click","selector":".more-info","stepsA":[{"display":"block"}],"stepsB":[]},/*{"type":"click","selector":".feedback","stepsA":[{"display":"block"}],"stepsB":[]},*/{"type":"click","selector":".contact","stepsA":[{"display":"block"}],"stepsB":[]}]}}
+  {"slug":"display-body-sections","name":"Display Body Sections","value":{"style":{},"triggers":[{"type":"click","selector":".more-info","stepsA":[{"display":"block"}],"stepsB":[]},{"type":"click","selector":".projects","stepsA":[{"display":"block"}],"stepsB":[]},/*{"type":"click","selector":".feedback","stepsA":[{"display":"block"}],"stepsB":[]},*/{"type":"click","selector":".contact","stepsA":[{"display":"block"}],"stepsB":[]}]}}
 ]);

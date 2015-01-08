@@ -142,6 +142,13 @@ p {
   padding-bottom: 0%;
   border-bottom: 1px solid #a6a6a6;
 }
+.projects {
+  height: auto;
+  min-height: 100%;
+  padding-top: 0px;
+  padding-bottom: 0%;
+  border-bottom: 1px solid #a6a6a6;
+}
 .social-media-link {
   margin-top: 13px;
   margin-right: 10px;
@@ -418,6 +425,9 @@ html.w-mod-js *[data-ix="hidtopbaronload"] {
   display: none;
 }
 html.w-mod-js *[data-ix="hidden-moreinfo"] {
+  display: none;
+}
+html.w-mod-js *[data-ix="hidden-projects"] {
   display: none;
 }
 html.w-mod-js *[data-ix="hidden-feedback"] {
