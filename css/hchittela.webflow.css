@@ -391,7 +391,7 @@ p {
   height: auto;
 }
 .hero2 {
-  min-height: 97%;
+  min-height: 100%;
   padding-top: 20%;
   padding-bottom: 0%;
   background-color: #5067ba;
