@@ -421,6 +421,18 @@ p {
   padding-right: 20px;
   padding-left: 20px;
 }
+.arrowWrapper {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}   
+.arrowDown {
+  display: block;
+  position: relative;
+  margin: auto;
+  width: 40px;
+  padding-bottom: 10px;
+}
 html.w-mod-js *[data-ix="hidtopbaronload"] {
   display: none;
 }
