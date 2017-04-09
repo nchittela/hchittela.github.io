@@ -1,0 +1,147 @@
+body {
+    padding-top: 50px;
+}
+
+.centered {
+    padding-top: 20%;
+}
+
+.title p {
+    font-family: 'Whitney';
+    font-size: 2em;
+    font-weight: 100;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.nav {
+    text-align: center;
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    display: inline;
+    padding: 0 40px;
+}
+
+a {
+    font-family: 'Whitney';
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+a:link {
+    color: #39A0DA;
+}
+
+a:focus {
+    color: #36383a;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #36383a;
+    text-decoration: none;
+}
+
+.grid {
+    margin-top: 80px;
+}
+.grid .row {
+    margin-bottom: 20px;
+}
+.grid .col-md-4 {
+    padding: 0px 20px;
+}
+.grid p {
+    font-family: 'Whitney';
+    font-weight: 100;
+    margin-top: 5px;
+    padding: 5px;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+}
+
+#ytplayer {
+    height: 704px;
+    width: 100%;
+}
+
+/* .modal-fullscreen */
+.modal-fullscreen {
+  background: transparent;
+  padding-top: 80px;
+}
+.modal-fullscreen .modal-content {
+  background: transparent;
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.modal-backdrop.modal-backdrop-fullscreen {
+  background: #ffffff;
+}
+.modal-backdrop.modal-backdrop-fullscreen.in {
+  opacity: .97;
+  filter: alpha(opacity=97);
+}
+
+/* .modal-fullscreen size: we use Bootstrap media query breakpoints */
+.modal-fullscreen .modal-dialog {
+  margin: 0;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .modal-fullscreen .modal-dialog {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .modal-fullscreen .modal-dialog {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .modal-fullscreen .modal-dialog {
+     width: 1280px;
+  }
+}
+
+.modal-footer {
+    border: 0;
+    color: #fff;
+    font-family: 'Whitney';
+    font-weight: 100;
+    text-align: center;
+}
+
+.contact {
+    font-size: 1.2em;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.contact p {
+    color: #36383a;
+}
+
+@font-face {
+    font-family: 'Whitney';
+    src: 'fonts/Whitney-Light.otf';
+}
+
+@font-face {
+    font-family: 'Quark';
+    src: 'fonts/Quark-Light.otf';
+}

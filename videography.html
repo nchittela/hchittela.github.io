@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Whole Milk Productions">
+    <meta name="author" content="Hemanth Chittela">
+    <link rel="icon" href="favicon.ico">
+
+    <title>WMP | Videography</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="top">
+        <div class="title">
+          <p>WHOLE MILK PRODUCTIONS</p>
+        </div>
+        <div class="nav">
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="videography.html">VIDEOGRAPHY</a></li>
+            <li><a href="photography.html">PHOTOGRAPHY</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+      </header>
+
+      <div class="grid">
+        <div class="row">
+          <div class="col-md-4">
+            <a id="hari_tol" onClick="setModalImg(this.id)" data-toggle="modal" data-target="#imgModal" href=""><img src="images/hari_tol.jpg"/></a>
+            <p>HARI RAVI - THINKING OUT LOUD / ITNI SI BAAT HAI</p>
+          </div>
+          <div class="col-md-4">
+            <a id="hari_cm" onClick="setModalImg(this.id)" data-toggle="modal" data-target="#imgModal" href=""><img src="images/hari_cm.jpg"/></a>
+            <p>HARI RAVI - CHANNA MEREYA / KABIRA</p>
+          </div>
+          <div class="col-md-4">
+            <a id="hari_lyz" onClick="setModalImg(this.id)" data-toggle="modal" data-target="#imgModal" href=""><img src="images/hari_lyz.jpg"/></a>
+            <p>HARI RAVI - LOVE YOU ZINDAGI / DIL DHADAKNE DO</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <a id="shlok_ae_dil" onClick="setModalImg(this.id)" data-toggle="modal" data-target="#imgModal" href=""><img src="images/shlok_ae_dil.jpg"/></a>
+            <p>SHLOK PUNJABI - AE DIL HAI MUSHKIL</p>
+          </div>
+          <div class="col-md-4">
+            <a id="muskurao" onClick="setModalImg(this.id)" data-toggle="modal" data-target="#imgModal" href=""><img src="images/muskurao.png"/></a>
+            <p>PENN MASTI - MUSKURAO</p>
+          </div>
+          <div class="col-md-4">
+            <a id="masti_as" onClick="setModalImg(this.id)" data-toggle="modal" data-target="#imgModal" href=""><img src="images/muskurao.png"/></a>
+            <p>PENN MASTI - AMERICAN SNIPER</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <a id="masti_iski" onClick="setModalImg(this.id)" data-toggle="modal" data-target="#imgModal" href=""><img src="images/muskurao.png"/></a>
+            <p>PENN MASTI - ISKI USKI</p>
+          </div>
+          <div class="col-md-4">
+            <a id="masti_panga" onClick="setModalImg(this.id)" data-toggle="modal" data-target="#imgModal" href=""><img src="images/muskurao.png"/></a>
+            <p>PENN MASTI - PUNJABI PANGA</p>
+          </div>
+          <div class="col-md-4">
+            <a id="masti_sorry" onClick="setModalImg(this.id)" data-toggle="modal" data-target="#imgModal" href=""><img src="images/muskurao.png"/></a>
+            <p>PENN MASTI - SORRY</p>
+          </div>
+
+        </div>
+      </div>
+    </div><!-- /.container -->
+
+    <div class="modal modal-fullscreen fade" id="imgModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <iframe id="ytplayer" type="text/html" src="" frameborder="0"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+      function setModalImg(imgID) {
+        vidSrc = "";
+        switch (imgID) {
+          case 'hari_tol':
+            vidSrc = "_muIyQCPVWE";
+            break;
+          case 'hari_cm':
+            vidSrc = "hlI0Wu49YR8";
+            break;
+          case 'hari_lyz':
+            vidSrc = "wzHpR1bRcQg";
+            break;
+          case 'muskurao':
+            vidSrc = "IgvBEXrw5Mo";
+            break;
+          case 'masti_as':
+            vidSrc = "vSwHYjsoSmI";
+            break;
+          case 'masti_iski':
+            vidSrc = "hlLst_gF1sE";
+            break;
+          case 'masti_panga':
+            vidSrc = "mRpxKbjtZ5Y";
+            break;
+          case 'masti_sorry':
+            vidSrc = "WrufcwP5Ab0";
+            break;
+        }
+
+        $("#ytplayer").attr("src", "https://www.youtube.com/embed/" + vidSrc + "?autoplay=1&iv_load_policy=3&color=white&origin=http://example.com");
+      };
+
+      $('#imgModal').on('hidden.bs.modal', function () {
+        $('#imgModal #ytplayer').attr("src", $("#imgModal #ytplayer").attr("src",""));
+      });
+    </script>
+  </body>
+</html>
