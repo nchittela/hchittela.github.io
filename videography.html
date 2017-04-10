@@ -133,6 +133,10 @@
       $('#imgModal').on('hidden.bs.modal', function () {
         $('#imgModal #ytplayer').attr("src", $("#imgModal #ytplayer").attr("src",""));
       });
+
+      $(function() {
+        $('a[href^="' + location.pathname.split("/")[location.pathname.split("/").length - 1] + '"]').addClass('active');
+      });
     </script>
   </body>
 </html>

@@ -89,6 +89,10 @@
       function setModalImg(imgPath) {
         $("#modal-image").attr("src","images/" + imgPath + ".jpg");
       }
+
+      $(function() {
+        $('a[href^="' + location.pathname.split("/")[location.pathname.split("/").length - 1] + '"]').addClass('active');
+      });
     </script>
   </body>
 </html>
