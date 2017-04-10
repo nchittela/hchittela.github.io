@@ -2,14 +2,17 @@ body {
     padding-top: 50px;
 }
 
+p {
+    font-family: 'Whitney';
+    font-weight: 100;
+}
+
 .centered {
     padding-top: 20%;
 }
 
 .title p {
-    font-family: 'Whitney';
     font-size: 2em;
-    font-weight: 100;
     letter-spacing: 3px;
     margin-bottom: 10px;
     text-align: center;
@@ -31,7 +34,6 @@ body {
 }
 
 a {
-    font-family: 'Whitney';
     font-weight: 400;
     letter-spacing: 1px;
 }
@@ -64,8 +66,6 @@ a:hover {
     padding: 0px 20px;
 }
 .grid p {
-    font-family: 'Whitney';
-    font-weight: 100;
     margin-top: 5px;
     padding: 5px;
     text-align: center;
@@ -125,8 +125,6 @@ img {
 .modal-footer {
     border: 0;
     color: #fff;
-    font-family: 'Whitney';
-    font-weight: 100;
     text-align: center;
 }
 
@@ -138,6 +136,15 @@ img {
 
 .contact p {
     color: #36383a;
+}
+
+.footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: #6c6c6c;
+    text-align: center;
 }
 
 @font-face {
