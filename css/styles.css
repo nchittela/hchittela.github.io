@@ -2,8 +2,10 @@ body {
     padding-top: 50px;
 }
 
-p {
-    font-family: 'Whitney';
+a,p {
+    /*font-family: 'Whitney';*/
+    font-family: 'Raleway', sans-serif;
+    /*font-family: 'Palanquin', sans-serif;*/
     font-weight: 100;
 }
 
