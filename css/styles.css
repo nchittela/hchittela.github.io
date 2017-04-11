@@ -21,17 +21,11 @@ p {
 
 .nav {
     text-align: center;
+    padding: 0 20%;
 }
 
-.nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.nav li {
-    display: inline;
-    padding: 0 40px;
+.nav.home .col {
+    margin: 20px 0;
 }
 
 a {
@@ -78,7 +72,7 @@ img {
 }
 
 #ytplayer {
-    height: 704px;
+    height: 720px;
     width: 100%;
 }
 

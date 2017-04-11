@@ -25,12 +25,20 @@
           <p>WHOLE MILK PRODUCTIONS</p>
         </div>
         <div class="nav">
-          <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="videography.html">VIDEOGRAPHY</a></li>
-            <li><a href="photography.html">PHOTOGRAPHY</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-          </ul>
+          <div class="row">
+            <div class="col col-md-3">
+              <a href="index.html">HOME</a>
+            </div>
+            <div class="col col-md-3">
+              <a href="videography.html">VIDEOGRAPHY</a>
+            </div>
+            <div class="col col-md-3">
+              <a href="photography.html">PHOTOGRAPHY</a>
+            </div>
+            <div class="col col-md-3">
+              <a href="contact.html">CONTACT</a>
+            </div>
+          </div>
         </div>
       </header>
 
@@ -97,15 +105,10 @@
 
     <div class="modal modal-fullscreen fade" id="imgModal" tabindex="-1" role="dialog">
       <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-            <iframe id="ytplayer" type="text/html" src="" frameborder="0"></iframe>
-          </div>
-        </div>
+        <iframe id="ytplayer" type="text/html" src="" frameborder="0"></iframe>
       </div>
     </div>
-
-
+    
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -143,7 +146,7 @@
             break;
         }
 
-        $("#ytplayer").attr("src", "https://www.youtube.com/embed/" + vidSrc + "?autoplay=1&      iv_load_policy=3&color=white&colors=0&rel=0&origin=http://example.com");
+        $("#ytplayer").attr("src", "https://www.youtube.com/embed/" + vidSrc + "?autoplay=1&iv_load_policy=3&color=white&colors=0&rel=0&origin=http://example.com");
       };
 
       $('#imgModal').on('hidden.bs.modal', function () {
