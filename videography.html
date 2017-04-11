@@ -63,40 +63,36 @@
             <p>SHLOK PUNJABI - AE DIL HAI MUSHKIL</p>
           </div>
           <div class="col-md-4">
-            <a id="muskurao" onClick="setModalImg(this.id)" data-toggle="modal" data-target="#imgModal" href=""><img src="images/muskurao.png"/></a>
+            <a id="muskurao" onClick="setModalImg(this.id)" data-toggle="modal" data-target="#imgModal" href=""><img src="images/muskurao4.jpg"/></a>
             <p>PENN MASTI - MUSKURAO</p>
           </div>
           <div class="col-md-4">
-            <a id="masti_as" onClick="setModalImg(this.id)" data-toggle="modal" data-target="#imgModal" href=""><img src="images/muskurao.png"/></a>
+            <a id="masti_as" onClick="setModalImg(this.id)" data-toggle="modal" data-target="#imgModal" href=""><img src="images/masti_as.jpg"/></a>
             <p>PENN MASTI - AMERICAN SNIPER</p>
           </div>
         </div>
         <div class="row">
           <div class="col-md-4">
-            <a id="masti_iski" onClick="setModalImg(this.id)" data-toggle="modal" data-target="#imgModal" href=""><img src="images/muskurao.png"/></a>
+            <a id="masti_iski" onClick="setModalImg(this.id)" data-toggle="modal" data-target="#imgModal" href=""><img src="images/iski_uski.jpg"/></a>
             <p>PENN MASTI - ISKI USKI</p>
           </div>
           <div class="col-md-4">
-            <a id="masti_panga" onClick="setModalImg(this.id)" data-toggle="modal" data-target="#imgModal" href=""><img src="images/muskurao.png"/></a>
+            <a id="masti_panga" onClick="setModalImg(this.id)" data-toggle="modal" data-target="#imgModal" href=""><img src="images/panga.jpg"/></a>
             <p>PENN MASTI - PUNJABI PANGA</p>
           </div>
           <div class="col-md-4">
-            <a id="masti_sorry" onClick="setModalImg(this.id)" data-toggle="modal" data-target="#imgModal" href=""><img src="images/muskurao.png"/></a>
+            <a id="masti_sorry" onClick="setModalImg(this.id)" data-toggle="modal" data-target="#imgModal" href=""><img src="images/sorry.jpg"/></a>
             <p>PENN MASTI - SORRY</p>
           </div>
         </div>
         <div class="row">
           <div class="col-md-4">
-            <a id="masti_iski" onClick="setModalImg(this.id)" data-toggle="modal" data-target="#imgModal" href=""><img src="images/muskurao.png"/></a>
-            <p>PENN MASTI - ISKI USKI</p>
+            <a id="jhalak" onClick="setModalImg(this.id)" data-toggle="modal" data-target="#imgModal" href=""><img src="images/jhalak.jpg"/></a>
+            <p>DREXEL JHALAK - RAM CIARA LEELA</p>
           </div>
           <div class="col-md-4">
-            <a id="masti_panga" onClick="setModalImg(this.id)" data-toggle="modal" data-target="#imgModal" href=""><img src="images/muskurao.png"/></a>
+            <a id="naach" onClick="setModalImg(this.id)" data-toggle="modal" data-target="#imgModal" href=""><img src="images/naach.jpg"/></a>
             <p>PENN MASTI - PUNJABI PANGA</p>
-          </div>
-          <div class="col-md-4">
-            <a id="masti_sorry" onClick="setModalImg(this.id)" data-toggle="modal" data-target="#imgModal" href=""><img src="images/muskurao.png"/></a>
-            <p>PENN MASTI - SORRY</p>
           </div>
         </div>
       </div>
@@ -105,10 +101,10 @@
 
     <div class="modal modal-fullscreen fade" id="imgModal" tabindex="-1" role="dialog">
       <div class="modal-dialog" role="document">
-        <iframe id="ytplayer" type="text/html" src="" frameborder="0"></iframe>
+        <iframe id="ytplayer" type="text/html" src="" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       </div>
     </div>
-    
+
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -144,9 +140,19 @@
           case 'masti_sorry':
             vidSrc = "WrufcwP5Ab0";
             break;
+          case 'jhalak':
+            vidSrc = "LemdtkjRGkw";
+            break;
+          case 'naach':
+            vidSrc = "6_xqY-sjM18";
+            break;
         }
 
         $("#ytplayer").attr("src", "https://www.youtube.com/embed/" + vidSrc + "?autoplay=1&iv_load_policy=3&color=white&colors=0&rel=0&origin=http://example.com");
+
+        if (imgID == 'shlok_ae_dil') {
+          $("#ytplayer").attr("src", "https://player.vimeo.com/video/185990730?autoplay=1&color=ffffff&title=0&byline=0&portrait=0")
+        }
       };
 
       $('#imgModal').on('hidden.bs.modal', function () {
