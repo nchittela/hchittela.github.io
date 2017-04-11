@@ -2,10 +2,8 @@ body {
     padding-top: 50px;
 }
 
-a,p {
-    /*font-family: 'Whitney';*/
-    font-family: 'Raleway', sans-serif;
-    /*font-family: 'Palanquin', sans-serif;*/
+p {
+    font-family: 'Palanquin', sans-serif;
     font-weight: 100;
 }
 
@@ -14,6 +12,7 @@ a,p {
 }
 
 .title p {
+    font-family: 'Raleway', sans-serif;
     font-size: 2em;
     letter-spacing: 3px;
     margin-bottom: 10px;
@@ -36,6 +35,7 @@ a,p {
 }
 
 a {
+    font-family: 'Palanquin', sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
 }
