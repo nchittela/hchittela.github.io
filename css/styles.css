@@ -159,8 +159,8 @@ img {
     margin: 0;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 20px;
     margin-top: 40px;
+    margin-bottom: 40px;
 }
 .contact p {
     color: #36383a;
@@ -169,7 +169,6 @@ img {
     margin: 15px 0;
 }
 .icons a {
-    /*color: #36383a;*/
     margin: 10px 5px;
 }
 
@@ -179,6 +178,12 @@ img {
     bottom: 0;
     left: 0;
     color: #6c6c6c;
+    text-align: center;
+}
+
+.copyright {
+    color: #6c6c6c;
+    font-size: 0.8em;
     text-align: center;
 }
 
