@@ -78,7 +78,7 @@ img.logo {
 }
 
 .grid {
-    margin-top: 60px;
+    margin-top: 50px;
 }
 .grid .row {
     margin-bottom: 20px;
@@ -104,7 +104,7 @@ img {
 /* .modal-fullscreen */
 .modal-fullscreen {
   background: transparent;
-  padding-top: 60px;
+  padding-top: 80px;
 }
 .modal-fullscreen .modal-content {
   background: transparent;
@@ -159,8 +159,8 @@ img {
     margin: 0;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 50px;
-    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-top: 40px;
 }
 .contact p {
     color: #36383a;
