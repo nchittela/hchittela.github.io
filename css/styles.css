@@ -91,6 +91,13 @@ img.logo {
     padding: 5px;
     text-align: center;
 }
+.grid .starring {
+    color: #8e8e8e;
+}
+.grid .slashes {
+    color: #acacac;
+    /*color: #39A0DA;*/
+}
 
 img {
     width: 100%;
@@ -154,13 +161,16 @@ img {
     margin-top: 60px;
     text-align: center;
 }
+.contact .links {
+    margin-top: 40px;
+}
 .contact .about {
     width: 70%;
     margin: 0;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-bottom: 60px;
 }
 .contact p {
     color: #36383a;
