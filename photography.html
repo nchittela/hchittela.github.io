@@ -103,16 +103,8 @@
     window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
   </script>
   <script src="js/bootstrap.min.js"></script>
-
   <script>
-    function setModalImg(imgPath) {
-      $("#modal-image").attr("src", "images/full/" + imgPath + ".jpg");
-    }
-
-    $(function () {
-      $('a[href^="' + location.pathname.split("/")[location.pathname.split("/").length - 1] + '"]').addClass(
-        'active');
-    });
+    function setModalImg(imgPath){$("#modal-image").attr("src", "images/full/" + imgPath + ".jpg");}$(function (){$('a[href^="' + location.pathname.split("/")[location.pathname.split("/").length - 1] + '"]').addClass( 'active');});
   </script>
 </body>
 
