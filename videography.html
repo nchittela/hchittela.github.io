@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+
   <meta name="description" content="Whole Milk Productions">
   <meta name="author" content="Hemanth Chittela">
   <link rel="icon" href="favicon.ico">
@@ -71,7 +71,7 @@
           <a id="aural_lc" onClick="setModalImg(this.id)" data-toggle="modal" data-target="#imgModal" href=""><img src="images/aural_lc.jpg" /></a>
           <p><span class="starring">AURAL <span class="slashes">//</span> </span>LAVA CAKE</p>
         </div>
-        
+
       </div>
       <div class="row">
         <div class="col-md-4">
@@ -108,7 +108,8 @@
 
   <div class="modal modal-fullscreen fade" id="imgModal" tabindex="-1" role="dialog">
     <div id="modal-dialog" class="modal-dialog" role="document">
-      <iframe id="ytplayer" type="text/html" src="" frameborder="0" style="overflow:hidden;height:100%;width:100%" height="100%" width="100%" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      <iframe id="ytplayer" type="text/html" src="" frameborder="0" style="overflow:hidden;height:100%;width:100%" height="100%"
+        width="100%" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </div>
   </div>
 
@@ -121,17 +122,73 @@
   </script>
   <script src="js/bootstrap.min.js"></script>
   <script type="text/javascript">
-    function setModalImg(imgID){vidSrc=""; switch (imgID){case 'hari_tol': vidSrc="_muIyQCPVWE"; break; case 'hari_cm': vidSrc="hlI0Wu49YR8"; break; case 'hari_lyz': vidSrc="wzHpR1bRcQg"; break; case 'muskurao': vidSrc="IgvBEXrw5Mo"; break; case 'masti_as': vidSrc="vSwHYjsoSmI"; break; case 'masti_iski': vidSrc="hlLst_gF1sE"; break; case 'masti_panga': vidSrc="mRpxKbjtZ5Y"; break; case 'masti_sorry': vidSrc="WrufcwP5Ab0"; break; case 'jhalak': vidSrc="LemdtkjRGkw"; break; case 'naach': vidSrc="6_xqY-sjM18"; break;}$("#ytplayer").attr("src", "https://www.youtube.com/embed/" + vidSrc + "?autoplay=1&iv_load_policy=3&color=white&colors=0&rel=0&playsinline=0&origin=http://example.com"); if (imgID=='shlok_ae_dil'){$("#ytplayer").attr("src", "https://player.vimeo.com/video/185990730?autoplay=1&color=ffffff&title=0&byline=0&portrait=0")}}; $('#imgModal').on('hidden.bs.modal', function(){$('#imgModal #ytplayer').attr("src", $("#imgModal #ytplayer").attr("src", ""));}); $(function (){$('a[href^="' + location.pathname.split("/")[location.pathname.split("/").length - 1] + '"]').addClass( 'active');});
+    function setModalImg(imgID) {
+      vidSrc = "";
+      switch (imgID) {
+        case 'hari_tol':
+          vidSrc = "_muIyQCPVWE";
+          break;
+        case 'hari_cm':
+          vidSrc = "hlI0Wu49YR8";
+          break;
+        case 'hari_lyz':
+          vidSrc = "wzHpR1bRcQg";
+          break;
+        case 'muskurao':
+          vidSrc = "IgvBEXrw5Mo";
+          break;
+        case 'masti_as':
+          vidSrc = "vSwHYjsoSmI";
+          break;
+        case 'aural_lc':
+          vidSrc = "ueSv6SPJNg8";
+          break;
+        case 'masti_iski':
+          vidSrc = "hlLst_gF1sE";
+          break;
+        case 'masti_panga':
+          vidSrc = "mRpxKbjtZ5Y";
+          break;
+        case 'masti_sorry':
+          vidSrc = "WrufcwP5Ab0";
+          break;
+        case 'jhalak':
+          vidSrc = "LemdtkjRGkw";
+          break;
+        case 'naach':
+          vidSrc = "6_xqY-sjM18";
+          break;
+      }
+      $("#ytplayer").attr("src", "https://www.youtube.com/embed/" + vidSrc +
+        "?autoplay=1&iv_load_policy=3&color=white&colors=0&rel=0&playsinline=0&origin=http://example.com");
+      if (imgID == 'shlok_ae_dil') {
+        $("#ytplayer").attr("src",
+          "https://player.vimeo.com/video/185990730?autoplay=1&color=ffffff&title=0&byline=0&portrait=0")
+      }
+    };
+    $('#imgModal').on('hidden.bs.modal', function () {
+      $('#imgModal #ytplayer').attr("src", $("#imgModal #ytplayer").attr("src", ""));
+    });
+    $(function () {
+      $('a[href^="' + location.pathname.split("/")[location.pathname.split("/").length - 1] + '"]').addClass(
+        'active');
+    });
   </script>
   <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
     ga('create', 'UA-58172161-2', 'auto');
     ga('send', 'pageview');
-
   </script>
 </body>
 
