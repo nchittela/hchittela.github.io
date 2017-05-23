@@ -46,6 +46,20 @@
     <div class="grid">
       <div class="row">
         <div class="col-md-4">
+          <a id="deewana" onClick="setModalImg(this.id)" data-toggle="modal" data-target="#imgModal" href=""><img src="images/deewana.jpg" /></a>
+          <p><span class="starring">MUSICAL AVISH <span class="slashes">//</span> </span>DEEWANA MONSTER</p>
+        </div>
+        <div class="col-md-4">
+          <a id="secrets" onClick="setModalImg(this.id)" data-toggle="modal" data-target="#imgModal" href=""><img src="images/secrets.jpg" /></a>
+          <p><span class="starring">CABIR <span class="slashes">//</span> </span>SECRETS VIOLIN COVER</p>
+        </div>
+        <div class="col-md-4">
+          <a id="masti_money" onClick="setModalImg(this.id)" data-toggle="modal" data-target="#imgModal" href=""><img src="images/masti_money.jpg" /></a>
+          <p><span class="starring">PENN MASTI <span class="slashes">//</span> </span>MONEY</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
           <a id="hari_tol" onClick="setModalImg(this.id)" data-toggle="modal" data-target="#imgModal" href=""><img src="images/hari_tol.jpg" /></a>
           <p><span class="starring">HARI RAVI <span class="slashes">//</span> </span>THINKING OUT LOUD - ITNI SI BAAT HAI</p>
         </div>
@@ -157,6 +171,18 @@
           break;
         case 'naach':
           vidSrc = "6_xqY-sjM18";
+          break;
+        case 'secrets':
+          vidSrc = "sIiI0e8EwoE";
+          break;
+        case 'deewana':
+          vidSrc = "SfzmK8-TZPM";
+          break;
+        case 'reborn':
+          vidSrc = "";
+          break;
+        case 'masti_money':
+          vidSrc = "3RdTI2oaWyk";
           break;
       }
       $("#ytplayer").attr("src", "https://www.youtube.com/embed/" + vidSrc +
