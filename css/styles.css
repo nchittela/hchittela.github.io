@@ -203,11 +203,13 @@ img {
     color: #36383a;
 }
 
-.contact .icons {
+.icons {
     margin: 15px 0;
+    text-align: center;
 }
 
 .icons a {
+    /*color: #36383a;*/
     margin: 10px 5px;
 }
 
